@@ -1,0 +1,5 @@
+scripts/__pycache__/
+*.mov
+*.mp4
+!public/xoflipper_teaser.mp4
+

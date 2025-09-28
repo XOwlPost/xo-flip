@@ -85,13 +85,13 @@ for i, g in enumerate(glyphs):
         clip = (
             ImageClip(g, duration=2)
             .resized(width=500)
-            .with_start(2 + i * 2)
-            .with_position(("center", "center"))
+            .set_start(2 + i * 2)
+            .set_position(("center", "center"))
         )
         glyph_clips.append(clip)
 
 # 3) Tagline overlay along the bottom for full duration
-tagline_clip = ImageClip(tagline_png_path, duration=8).with_position(("center", "bottom"))
+tagline_clip = ImageClip(tagline_png_path, duration=8).set_position(("center", "bottom"))
 
 # 4) Compose and export (moviepy v2: use .with_duration)
 final = CompositeVideoClip([banner_clip, tagline_clip] + glyph_clips).with_duration(8)

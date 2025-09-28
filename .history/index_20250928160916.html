@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XOFlipper</title>
+  <link rel="icon" type="image/png" href="/public/favicon.ico">
+  <link rel="preload" as="image" href="/public/dolphin_seals_banner_1500x500.jpg">
+  <link rel="stylesheet" href="/styles.css" />
+  <meta name="description" content="XOFlipper — a playful pod with real traits. Gold Rush · Pod Power · Seal of Trust."/>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="XOFlipper — Gold Rush • Pod Power • Seal of Trust" />
+  <meta property="og:description" content="A playful pod with real traits. Watch the teaser." />
+  <meta property="og:image" content="https://xoflip.com/public/dolphin_seals_banner_1500x500.jpg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:player" content="https://xoflip.com/public/xoflipper_teaser.mp4" />
+</head>
+<body>
+  <header class="hero" role="banner" aria-label="XOFlipper banner">
+    <div class="hero-inner">
+      <h1>XOFlipper</h1>
+      <p class="tagline">Gold Rush · Pod Power · Seal of Trust</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#" id="mint-link">🚀 Mint on Pump.fun</a>
+        <a class="btn" href="https://xo-vault.com" target="_blank" rel="noopener">📜 View in Vault</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="traits" aria-labelledby="traits-title">
+      <h2 id="traits-title">Traits</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="/assets/png/gold_rush_1000x1000.png" alt="Gold Rush glyph">
+          <h3>Gold Rush</h3>
+          <p>Flash flips and sparkling yield — the meme energy that kicks it off.</p>
+        </article>
+        <article class="card">
+          <img src="/assets/png/pod_power_1000x1000.png" alt="Pod Power glyph">
+          <h3>Pod Power</h3>
+          <p>Strength in numbers — the more we swim together, the farther we go.</p>
+        </article>
+        <article class="card">
+          <img src="/assets/png/seal_of_trust_1000x1000.png" alt="Seal of Trust glyph">
+          <h3>Seal of Trust</h3>
+          <p>Community-first promises — sealed in XO Vault, visible to everyone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="video" aria-labelledby="video-title">
+      <h2 id="video-title">XOFlipper Teaser</h2>
+      <div class="video-frame">
+        <!-- Replace the src below with the real final video URL when ready -->
+        <video autoplay muted loop playsinline controls
+        poster="/public/dolphin_seals_banner_1500x500.jpg" width="100%">
+        <source src="/public/xoflipper_teaser.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="hint">Drop your final MP4 at <code>/public/xoflipper_teaser.mp4</code> (≤30 MB).</p>
+    </section>
+  </main>
+
+  <section id="about" class="stack">
+    <h2>About</h2>
+    <p>XOFlipper is a meme-born pod that carries real traits into the XO ecosystem:
+       <em>Gold Rush, Pod Power, Seal of Trust</em>. Get the mint, join the pod, and help evolve the lore.</p>
+  </section>
+  
+  <section id="traits" class="stack">
+    <h2>Traits</h2>
+    <ul class="traits-list">
+      <li><strong>Gold Rush</strong> — flash flips and sparkling yield.</li>
+      <li><strong>Pod Power</strong> — strength in numbers + constellation sync.</li>
+      <li><strong>Seal of Trust</strong> — promises sealed in XO Vault.</li>
+    </ul>
+    <p><a href="https://xotraits.com/flip" target="_blank">Explore traits on xotraits.com →</a></p>
+  </section>
+  
+  <section id="vault" class="stack">
+    <h2>Vault & Lore</h2>
+    <p>Immutable drop archives, signed manifests, and community replies.</p>
+    <p><a href="https://xo-vault.com/vault/drops/xoflipper" target="_blank">View the XOFlipper bundle in XO Vault →</a></p>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="https://xotraits.com" target="_blank" rel="noopener">xotraits.com</a>
+      <span>•</span>
+      <a href="https://xo-vault.com" target="_blank" rel="noopener">xo-vault.com</a>
+    </nav>
+    <small>© XO Ecosystem</small>
+  </footer>
+
+  <script>
+    // Optional: set Pump.fun link dynamically later
+    const mint = document.getElementById('mint-link');
+          mint.href = 'https://pump.fun/coin/7kJydupKi5AFHxHcL3QoMmt2T1cVkhzq1P1J1meTpump'; // fill when live
+  </script>
+</body>
+</html>
