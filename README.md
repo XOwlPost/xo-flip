@@ -1,3 +1,19 @@
+## Teaser generation (Option B: Python + ffmpeg)
+
+1. Ensure `ffmpeg` is installed (`brew install ffmpeg`).
+2. Run the generator to create `/public/xoflipper_teaser.mp4`.
+
+```
+python3 scripts/generate_teaser.py
+```
+
+Transcode from an existing MOV if needed:
+
+```
+ffmpeg -i XOFlipper_source.mov -vf "scale=1920:-2:flags=lanczos,fps=30" \
+  -c:v libx264 -profile:v high -preset slow -crf 23 -pix_fmt yuv420p \
+  -an public/xoflipper_teaser.mp4
+```
 # XOFlipper — Landing (xoflip.com)
 
 A tiny static site for the XOFlipper drop. Designed for Cloudflare Pages or any static host.
